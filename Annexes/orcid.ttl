@@ -1,0 +1,46 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn:   <http://www.geonames.org/ontology#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix pav:  <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://orcid.org/0009-0000-5318-3662#orcid-id>
+        rdf:type                     foaf:OnlineAccount ;
+        rdfs:label                   "0009-0000-5318-3662" ;
+        foaf:accountName             "0009-0000-5318-3662" ;
+        foaf:accountServiceHomepage  <https://orcid.org> .
+
+<https://orcid.org/0009-0000-5318-3662#workspace-works>
+        rdf:type  foaf:Document .
+
+<http://sws.geonames.org/3017382/>
+        rdfs:label      "France" , "Republic of France" ;
+        gn:countryCode  "FR" ;
+        gn:name         "Republic of France" , "France" .
+
+<https://pub.orcid.org/orcid-pub-web/experimental_rdf_v1/0009-0000-5318-3662>
+        rdf:type              foaf:PersonalProfileDocument ;
+        pav:createdBy         <https://orcid.org/0009-0000-5318-3662> ;
+        pav:createdOn         "2026-09-10T08:27:34.704Z"^^xsd:dateTime ;
+        pav:createdWith       <https://orcid.org> ;
+        pav:lastUpdateOn      "2026-09-10T08:29:15.154Z"^^xsd:dateTime ;
+        prov:generatedAtTime  "2026-09-10T08:29:15.154Z"^^xsd:dateTime ;
+        prov:wasAttributedTo  <https://orcid.org/0009-0000-5318-3662> ;
+        foaf:maker            <https://orcid.org/0009-0000-5318-3662> ;
+        foaf:primaryTopic     <https://orcid.org/0009-0000-5318-3662> .
+
+<https://orcid.org/0009-0000-5318-3662>
+        rdf:type           prov:Person , foaf:Person ;
+        rdfs:label         "Lilian Mirabel" ;
+        foaf:account       <https://orcid.org/0009-0000-5318-3662#orcid-id> ;
+        foaf:based_near    [ rdf:type          gn:Feature ;
+                             gn:countryCode    "FR" ;
+                             gn:parentCountry  <http://sws.geonames.org/3017382/>
+                           ] ;
+        foaf:familyName    "Mirabel" ;
+        foaf:givenName     "Lilian" ;
+        foaf:page          <https://lilianmirabel.fr/> ;
+        foaf:publications  <https://orcid.org/0009-0000-5318-3662#workspace-works> .

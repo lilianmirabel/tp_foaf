@@ -1,0 +1,50 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix inbox: </inbox/>.
+@prefix set: </settings/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix lil: </>.
+
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1789030300071
+    vcard:country-name "France";
+    vcard:locality "La Rochelle";
+    vcard:postal-code "17000".
+:id1789030340017
+a soc:GithubAccount; foaf:accountName "https://github.com/lilianmirabel".
+:id1789030410816 solid:publicId l:fr.
+
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage ( :id1789030410816 );
+    vcard:bday "2003-12-10";
+    vcard:fn "Lilian Mirabel";
+    vcard:hasAddress :id1789030300071;
+    vcard:hasPhoto <avatar.png>;
+    vcard:nickname "Lilian";
+    vcard:note
+        "J'étudie actuellement en Master Informatique (parcours Architecture Logicielle) à La Rochelle Université.";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile set:prefs.ttl;
+    space:storage lil:;
+    solid:account lil:;
+    solid:oidcIssuer <https://solidweb.org>;
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
+    foaf:account ( :id1789030340017 );
+    foaf:name "Lilian";
+    foaf:nick "Lilian".
+l:fr schema:name "French"@en.
