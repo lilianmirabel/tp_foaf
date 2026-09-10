@@ -1,14 +1,53 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:gn="http://www.geonames.org/ontology#"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-  <foaf:Person>
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="https://orcid.org/0009-0000-5318-3662"/>
+    <foaf:primaryTopic rdf:resource="https://orcid.org/0009-0000-5318-3662"/>
+    <dc:title>Profil FOAF de Lilian Mirabel</dc:title>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:about="https://orcid.org/0009-0000-5318-3662">
     <foaf:name>Lilian Mirabel</foaf:name>
+    <foaf:givenName>Lilian</foaf:givenName>
+    <foaf:familyName>Mirabel</foaf:familyName>
     <foaf:nick>lilian</foaf:nick>
+    <foaf:title>M.</foaf:title>
+
+    <foaf:status>Étudiant en Master Informatique &amp; Alternant SNCF</foaf:status>
+
+    <foaf:homepage rdf:resource="https://lilianmirabel.fr/"/>
     <foaf:mbox rdf:resource="mailto:lilianmirabel01120@gmail.com"/>
-    <foaf:homepage rdf:resource="http://lilianmirabel.fr"/>
+
+    <owl:sameAs rdf:resource="https://orcid.org/0009-0000-5318-3662"/>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="https://orcid.org/0009-0000-5318-3662#orcid-id">
+        <rdfs:label>ORCID</rdfs:label>
+        <foaf:accountName>0009-0000-5318-3662</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="https://orcid.org"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:based_near>
+      <gn:Feature rdf:about="http://sws.geonames.org/3017382/">
+        <rdfs:label>France</rdfs:label>
+        <gn:countryCode>FR</gn:countryCode>
+      </gn:Feature>
+    </foaf:based_near>
+
+
+    <foaf:interest rdf:resource="http://dbpedia.org/resource/Computer_science"/>
+    <foaf:interest rdf:resource="http://dbpedia.org/resource/Ocean"/>
+    <foaf:interest rdf:resource="http://dbpedia.org/resource/Lifeguard"/>
+    <foaf:interest rdf:resource="http://dbpedia.org/resource/First_aid"/>
+
+    <foaf:publications rdf:resource="https://orcid.org/0009-0000-5318-3662#workspace-works"/>
   </foaf:Person>
 
 </rdf:RDF>

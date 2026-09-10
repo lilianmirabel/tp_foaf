@@ -2,12 +2,60 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma page personnel</title>
-    <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilian Mirabel</title>
+    
+    <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue sur ma homepage</h1>
-    <p>Vous avez acces a ma page foaf grâce a RDF.</p>
-    <p><a href="foaf.rdf">Consulter le fichier RDF</a></p>
+
+    <div class="wrapper">
+        <header>
+            <h1>Lilian Mirabel</h1>
+            <p class="subtitle">Étudiant en Master Informatique &amp; alternant à la SNCF (Lyon)</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>À propos</h2>
+                <p>
+                    Actuellement en Master Informatique, je partage mon temps entre les cours et mon alternance 
+                    au sein de la SNCF à Lyon. Je m'intéresse particulièrement à l'architecture logicielle, 
+                    au développement web et aux systèmes d'information.
+                </p>
+                <p>
+                    En dehors du code, je passe beaucoup de temps au bord ou dans l'eau. Je suis passionné 
+                    par l'océan et engagé dans le secourisme (sauvetage aquatique et premiers secours).
+                </p>
+            </section>
+
+            <section>
+                <h2>Centres d'intérêt</h2>
+                <ul class="interests-list">
+                    <li><strong>Informatique :</strong> Développement backend & frontend, architecture logicielle, web sémantique.</li>
+                    <li><strong>Secourisme & Sauvetage :</strong> BNSSA, interventions d'urgence et sécurité des baignades.</li>
+                    <li><strong>Océan :</strong> Nage en eau libre, sports nautiques et environnement côtier.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Web sémantique & Données</h2>
+                <p>
+                    Cette page est reliée à un profil RDF utilisant le vocabulaire <em>Friend of a Friend</em> (FOAF). 
+                    Vous pouvez accéder aux données brutes pour les intégrer dans un graphe de connaissances :
+                </p>
+                <p class="rdf-link">
+                    <code>&gt;</code> <a href="foaf.rdf">Consulter le fichier foaf.rdf</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p><small>Dernière mise à jour : 2026 — Hébergé sur ma page personnelle</small></p>
+        </footer>
+    </div>
+
 </body>
 </html>
